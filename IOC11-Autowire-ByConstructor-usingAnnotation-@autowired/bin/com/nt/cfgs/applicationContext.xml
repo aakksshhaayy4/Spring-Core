@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context-4.3.xsd">
+<context:annotation-config/>
+<bean id="heart" class="com.nt.beans.Heart"></bean>
+
+<bean id="human" class="com.nt.beans.Human"></bean>
+
+</beans>
+
+<!-- For the @Autowired,
+ we need an default constructor 
+ and in .xml file there is <context:annotation-config>tag is must 
+ otherwise it will throws exceptions  -->
+ 
+ <!-- To use @Autowired annotation
+ and to call our desired constructor we have to activate it by using
+ <context:annotation-config> in the .xml -->
+ 
+ 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<bean id="heart" class="com.nt.beans.Heart"/>
+
+<bean id="human" class="com.nt.beans.Human" autowire="byType">
+
+</bean>
+
+</beans>
+
+<!-- In this COncept of autowire-byType, 
+we have to Configure the class name and reference class name..
+ Class NAme (com.nt."Heart")(From .xml) and Reference class name (private "Heart" heart) must be same
+ Then only autowire-ByType method execute Successfully otherwise "NullPointerException" Occur   -->

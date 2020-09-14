@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<bean id="rider1" class="com.nt.beans.Rider1">
+<property name="riderId" value="1001"/>
+<property name="riderName" value="Akshay"/>
+<property name="rider" >
+<bean class="com.nt.beans.Race"></bean>
+</property>
+</bean>
+
+<bean id="rider2" class="com.nt.beans.Rider2">
+<property name="riderId" value="1002"/>
+<property name="riderName" value="Pavan"/>
+<property name="race">
+<bean class="com.nt.beans.Race"></bean>
+</property>
+
+</bean>
+
+</beans>

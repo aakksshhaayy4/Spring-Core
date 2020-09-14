@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<bean id="heart" class="com.nt.beans.Heart"/>
+
+<bean id="human" class="com.nt.beans.Human" autowire="byName">
+
+</bean>
+
+</beans>
+
+
+<!-- In the Autowire-ByName concept, 
+ the ID value("heart") and the reference variable(private Heart "heart") must be same -->
